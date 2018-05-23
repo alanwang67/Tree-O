@@ -1,21 +1,25 @@
 class ball {
-  color c; 
+  int r;
+  int g;
+  int b;
   float xpos;
   float ypos;
   float xspeed; 
   float yspeed; 
 
   ball() {
-    c = color(random(100));
+    r = int(random(255));
+    g = int(random(255));
+    b = int(random(255));
     xpos = width/2;
     ypos = height/2;
-    xspeed = random(500);
-    yspeed = 1;
+    xspeed = random(5);
+    yspeed = random(5);
   }  
 
   void display() {
-    fill(c);
-    ellipse(10, 10, 10, 10);
+    fill(r,g,b);
+    ellipse(xpos, ypos, 10, 10);
   }
 
   void move() {
