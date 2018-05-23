@@ -1,4 +1,3 @@
-
 ball[] Ball = new ball[40];
 void setup() {
   size(600, 600);
